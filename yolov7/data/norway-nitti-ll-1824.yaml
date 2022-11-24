@@ -1,0 +1,6 @@
+train: ../data/derived/train-nitti-ll-1824/images/train
+val: ../data/derived/train-nitti-ll-1824/images/val
+
+# Classes
+nc: 4  # number of classes
+names: ['D00', 'D10', 'D20', 'D40']  # class names
