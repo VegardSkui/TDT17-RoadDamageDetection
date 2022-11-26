@@ -1,5 +1,7 @@
 # Road Damage Detection
 
+Road damage detection using YOLOv7 ([GitHub Repo](https://github.com/WongKinYiu/yolov7), [Paper](https://arxiv.org/abs/2207.02696)) for the Norwegian dataset in the [Crowdsensing-based Road Damage Detection Challenge (CRDDC2022)](https://crddc2022.sekilab.global/).
+
 ## Model training
 
 The following command was used in the `yolov7` directory to train the final model.
@@ -20,3 +22,7 @@ python -m torch.distributed.launch \
     --cache-images \
     --label-smoothing 0.1
 ```
+
+## Detection
+
+Code to run detection using the trained model and produce a final file suitable for submission in CRDDC2022 can be found in the [`detect.ipynb`](detect.ipynb)-notebook.
